@@ -1,0 +1,29 @@
+</section>
+<footer>
+    <div id="today_btn">最近推荐</div>
+    <div id="history_btn">历史推荐</div>
+</footer>
+</div>
+<script>
+
+$('#history_btn').on('click',function(){
+    window.location.href = "/historylist"
+})
+$('#today_btn').on('click',function(){
+    window.location.href = "/todayrecommend"
+})
+$('#history_list_ul').on('click','li',function(){
+    window.location.href = `/recdetail/${$(this).data('id')}`
+})
+$('#detail_box .like').on('click',function(){
+    let id = $(this).data('id');
+    console.log(id,'id');
+    $.ajax({url:`/addlike?id=${id}`}).then(d => {
+        if(d.code === 1){
+            window.location.reload()
+        }
+    })
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<%- include("header",{}) %>
+<ul id="history_list_ul" class="ui-list ui-list-function ui-border-tb">
+    <% list.forEach((v)=>{ %>
+        <li data-id=<%= v.id %> class="history_list">
+            <div class="ui-avatar">
+                <span style="background-image:url(<%= v.image %>)"></span>
+            </div>
+            <div class="ui-list-info ui-border-t">
+                <h4 class="ui-nowrap"><%= v.title %></h4>
+                <p><%= v.createTime %></p>
+            </div>
+        </li>
+    <% }) %>
+</ul>
+<% include footer %>

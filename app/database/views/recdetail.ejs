@@ -1,0 +1,14 @@
+<%- include("header",{}) %>
+    <div id="detail_box">
+        <h1><%= data.title %></h1>
+        <p class="desc">
+            <span><%= data.createTime %></span>
+            <span>点赞数：<%= data.like %></span>
+        </p>
+        <img src="<%= data.image %>" alt="">
+        <p class="content"><%= data.content %></p>
+        <div data-id='<%= data.id %>' class="like">
+            <i class="fa fa-thumbs-o-up fa-lg"></i>
+        </div>
+    </div>
+<% include footer %>

@@ -1,0 +1,28 @@
+{
+  "name": "wechat_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "glob": "^7.1.4",
+    "js-sha1": "^0.6.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static-cache": "^5.1.2",
+    "koa-views": "^6.2.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.5.11",
+    "raw-body": "^2.4.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "xml2js": "^0.4.19"
+  }
+}
