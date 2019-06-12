@@ -4,17 +4,15 @@
 
 > app 文件总入口
 
->>config 配置文件，例如微信的一些字段，还有mongodb的地址
+> config 配置文件，例如微信的一些字段，还有mongodb的地址
 
->> database 数据库的相关东西
+> database 数据库的相关东西，<br >并且一些项目的路由，静态资源，数据模型，模版文件
 
->>> schema 存放的是数据结构， init为数据库初始化文件
+> util 工具函数
 
->>util 工具函数
+> wechat 获取access_token
 
->>wechat 获取access_token
-
->> wechat-lib 里面有通过微信的认证和消息的简单回复
+> wechat-lib 里面有通过微信的认证和消息的简单回复
 
 ----
 
@@ -32,6 +30,8 @@
 "request": "^2.88.0",（用来发送请求）
 "request-promise": "^4.2.4",（用来发送请求）
 "xml2js": "^0.4.19"（转换xml）
+"view": (用来渲染模版的)
+“koa-static-cache”: (用来设置一个静态资源服务器)
 ```
 ----
 
@@ -42,4 +42,5 @@
 - 实现一个简单的微信公众号回复功能
 
 - 获取access——token，并存入到mongo数据库中（较为麻烦）
+
 
